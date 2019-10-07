@@ -163,11 +163,11 @@
 
     // Alarmの処理
     function alarm(){
-      ver canvas = $("#mycanvas")[0];
-      ver ctx = canvas.getContext("sd");
+      var canvas = $("#mycanvas")[0];
+      var ctx = canvas.getContext("2d");
       var img = new Image();
-      img.stc = "ksuisbg.gif";
-      img.onload = function() { ctx.drawImage(img, 0 ,0,300, 300); };
+      img.src = "ksuisbg.gif";
+      img.onload = function() { ctx.drawImage(img, 0 ,0 ,300, 300); };
         
         
     }
